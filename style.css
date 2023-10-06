@@ -1,0 +1,74 @@
+:root {
+  --basic-color: #f9f5f6;
+  --secondary-color: #93b1a6;
+  --font-color: #183d3d;
+  --hover-color: rgba(158, 158, 158, 0.37);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: var(--basic-color);
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+.todo-container {
+  background-color: var(--secondary-color);
+  width: 100%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 12px;
+}
+.todo-container h1 {
+  color: var(--font-color);
+  text-align: center;
+}
+.add-todo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin: 12px auto;
+}
+#todo-input {
+  flex: 1;
+  text-align: center;
+  border: none;
+  padding: 15px 50px;
+  font-weight: 200px;
+  width: 90%;
+  border-radius: 12px;
+}
+#add-button {
+  border: none;
+  padding: 5px 5px;
+  margin: 2px;
+  background-color: var(--font-color);
+  color: var(--basic-color);
+  font-size: 20px;
+  border-radius: 50%;
+}
+.circle {
+  border-radius: 50px;
+  border: none;
+  padding: 3px;
+}
+.edit-button {
+  color: blue;
+}
+.delete-button {
+  color: red;
+}
+.circle:hover,
+#add-button:hover {
+  background-color: var(--hover-color);
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
